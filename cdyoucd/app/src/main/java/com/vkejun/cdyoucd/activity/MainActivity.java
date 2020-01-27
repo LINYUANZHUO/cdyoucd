@@ -1,4 +1,4 @@
-package com.vkejun.cdyoucd;
+package com.vkejun.cdyoucd.activity;
 
 import android.os.Bundle;
 import android.view.KeyEvent;
@@ -8,6 +8,7 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.ashokvarma.bottomnavigation.BottomNavigationBar;
 import com.ashokvarma.bottomnavigation.BottomNavigationItem;
+import com.vkejun.cdyoucd.R;
 import com.vkejun.cdyoucd.config.MToast;
 import com.vkejun.cdyoucd.fragment.F1;
 import com.vkejun.cdyoucd.fragment.F2;
