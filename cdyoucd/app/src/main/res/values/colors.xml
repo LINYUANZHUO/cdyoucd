@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="di">#FFFFFFFF</color>
+    <color name="ww">#FFFFD180</color>
+    <color name="xx">#FFFFAB40</color>
+
+    <color name="sakura">#fffb7299</color>
+    <color name="sakura_text">#fffb7299</color>
+    <color name="初然">#ff56a36c</color>
+    <color name="初然_text">#ff56a36c</color>
+    <color name="初秋">#ffcb7575</color>
+    <color name="初秋_text">#ffcb7575</color>
+    <color name="微光">#ff60c5ba</color>
+    <color name="微光_text">#ff60c5ba</color>
+    <color name="棕色">#ff795548</color>
+    <color name="棕色_text">#ff795548</color>
+    <color name="紫苑">#ffa593e0</color>
+    <color name="紫苑_text">#ffa593e0</color>
+    <color name="蔷薇">#ffe94e77</color>
+    <color name="蔷薇_text">#ffe94e77</color>
+    <color name="蕾姆">#ff6285c7</color>
+    <color name="蕾姆_text">#ff6285c7</color>
+</resources>

@@ -1,0 +1,108 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="sakura" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">@color/sakura</item>
+        <item name="colorControlNormal">@android:color/white</item>
+        <item name="colorPrimary">@color/sakura</item>
+        <item name="colorPrimaryDark">@color/sakura</item>
+        <item name="titleTextColor">@android:color/white</item>
+    </style>
+    <style name="sakuradialog" parent="@style/Theme.AppCompat.Light.Dialog">
+        <item name="android:textColorPrimary">@color/sakura</item>
+        <item name="android:textColor">@color/sakura</item>
+        <item name="colorAccent">@color/sakura</item>
+    </style>
+    <style name="初然" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">@color/初然_text</item>
+        <item name="colorControlNormal">@android:color/white</item>
+        <item name="colorPrimary">@color/初然</item>
+        <item name="colorPrimaryDark">@color/初然</item>
+        <item name="titleTextColor">@android:color/white</item>
+    </style>
+    <style name="初然dialog" parent="@style/Theme.AppCompat.Light.Dialog">
+        <item name="android:textColorPrimary">@color/初然_text</item>
+        <item name="android:textColor">@color/初然_text</item>
+        <item name="colorAccent">@color/初然_text</item>
+    </style>
+    <style name="初秋" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">@color/初秋_text</item>
+        <item name="colorControlNormal">@android:color/white</item>
+        <item name="colorPrimary">@color/初秋</item>
+        <item name="colorPrimaryDark">@color/初秋</item>
+        <item name="titleTextColor">@android:color/white</item>
+    </style>
+    <style name="初秋dialog" parent="@style/Theme.AppCompat.Light.Dialog">
+        <item name="android:textColorPrimary">@color/初秋_text</item>
+        <item name="android:textColor">@color/初秋_text</item>
+        <item name="colorAccent">@color/初秋_text</item>
+    </style>
+    <style name="微光" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">@color/微光_text</item>
+        <item name="colorControlNormal">@android:color/white</item>
+        <item name="colorPrimary">@color/微光</item>
+        <item name="colorPrimaryDark">@color/微光</item>
+        <item name="titleTextColor">@android:color/white</item>
+    </style>
+    <style name="微光dialog" parent="@style/Theme.AppCompat.Light.Dialog">
+        <item name="android:textColorPrimary">@color/微光_text</item>
+        <item name="android:textColor">@color/微光_text</item>
+        <item name="colorAccent">@color/微光_text</item>
+    </style>
+    <style name="棕色" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">@color/棕色_text</item>
+        <item name="colorControlNormal">@android:color/white</item>
+        <item name="colorPrimary">@color/棕色</item>
+        <item name="colorPrimaryDark">@color/棕色</item>
+        <item name="titleTextColor">@android:color/white</item>
+    </style>
+    <style name="棕色dialog" parent="@style/Theme.AppCompat.Light.Dialog">
+        <item name="android:textColorPrimary">@color/棕色_text</item>
+        <item name="android:textColor">@color/棕色_text</item>
+        <item name="colorAccent">@color/棕色_text</item>
+    </style>
+    <style name="紫苑" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">@color/紫苑_text</item>
+        <item name="colorControlNormal">@android:color/white</item>
+        <item name="colorPrimary">@color/紫苑</item>
+        <item name="colorPrimaryDark">@color/紫苑</item>
+        <item name="titleTextColor">@android:color/white</item>
+    </style>
+    <style name="紫苑dialog" parent="@style/Theme.AppCompat.Light.Dialog">
+        <item name="android:textColorPrimary">@color/紫苑_text</item>
+        <item name="android:textColor">@color/紫苑_text</item>
+        <item name="colorAccent">@color/紫苑_text</item>
+    </style>
+    <style name="蔷薇" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">@color/蔷薇_text</item>
+        <item name="colorControlNormal">@android:color/white</item>
+        <item name="colorPrimary">@color/蔷薇</item>
+        <item name="colorPrimaryDark">@color/蔷薇</item>
+        <item name="titleTextColor">@android:color/white</item>
+    </style>
+    <style name="蔷薇dialog" parent="@style/Theme.AppCompat.Light.Dialog">
+        <item name="android:textColorPrimary">@color/蔷薇_text</item>
+        <item name="android:textColor">@color/蔷薇_text</item>
+        <item name="colorAccent">@color/蔷薇_text</item>
+    </style>
+    <style name="蕾姆" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">@color/蕾姆_text</item>
+        <item name="colorControlNormal">@android:color/white</item>
+        <item name="colorPrimary">@color/蕾姆</item>
+        <item name="colorPrimaryDark">@color/蕾姆</item>
+        <item name="titleTextColor">@android:color/white</item>
+    </style>
+    <style name="蕾姆dialog" parent="@style/Theme.AppCompat.Light.Dialog">
+        <item name="android:textColorPrimary">@color/蕾姆_text</item>
+        <item name="android:textColor">@color/蕾姆_text</item>
+        <item name="colorAccent">@color/蕾姆_text</item>
+    </style>
+
+</resources>

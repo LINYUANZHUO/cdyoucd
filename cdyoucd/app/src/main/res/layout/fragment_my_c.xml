@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical"
+	android:background="@android:color/white"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<androidx.appcompat.widget.Toolbar
+		android:id="@+id/toolbar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="?attr/colorPrimary"
+		android:minHeight="?attr/actionBarSize"
+		android:theme="?attr/actionBarTheme" />
+
+	<androidx.cardview.widget.CardView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:id="@+id/fragment_mydataLinearLayout"
+			android:padding="15.0dip"
+			android:layout_width="fill_parent"
+			android:layout_height="150.0dip">
+
+			<LinearLayout
+				android:gravity="center_vertical"
+				android:orientation="horizontal"
+				android:paddingLeft="30.0dip"
+				android:paddingRight="30.0dip"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content">
+
+				<ImageView
+					android:id="@+id/fragment_mydataImageView"
+					android:layout_width="70.0dip"
+					android:layout_height="70.0dip"
+					android:src="@drawable/tx" />
+
+				<TextView
+					android:textSize="18.0sp"
+					android:textColor="#ffffffff"
+					android:id="@+id/fragment_mydataTextView"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="10.0dip"
+					android:text="未登录"
+					android:singleLine="true"
+					android:layout_weight="1.0" />
+
+				<Button
+					android:textColor="@android:color/white"
+					android:id="@+id/fragment_mydataButton"
+					android:background="@drawable/button_circle"
+					android:layout_width="65.0dip"
+					android:layout_height="40.0dip"
+					android:text="编辑资料" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:gravity="center"
+				android:orientation="vertical"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1.0">
+
+				<TextView
+					android:textColor="#ffffffff"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="0"/>
+
+				<TextView
+					android:textColor="#ffffffff"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="未开发" />
+			</LinearLayout>
+			<LinearLayout
+				android:gravity="center"
+				android:orientation="vertical"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1.0">
+
+				<TextView
+					android:textColor="#ffffffff"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="0"/>
+
+				<TextView
+					android:textColor="#ffffffff"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="未开发" />
+			</LinearLayout>
+			<LinearLayout
+				android:gravity="center"
+				android:orientation="vertical"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1.0">
+
+				<TextView
+					android:textColor="#ffffffff"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="0"/>
+
+				<TextView
+					android:textColor="#ffffffff"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="未开发" />
+			</LinearLayout>
+		</LinearLayout>
+	</androidx.cardview.widget.CardView>
+	<include layout="@layout/fragment_my_c_main" />
+</LinearLayout>
