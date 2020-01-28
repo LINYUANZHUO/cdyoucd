@@ -30,4 +30,5 @@ public class F1 extends Fragment
         setHasOptionsMenu(true);
         ((AppCompatActivity)getActivity()).setSupportActionBar(this.toolbar);
     }
+
 }

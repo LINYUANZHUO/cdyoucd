@@ -17,30 +17,20 @@ import com.vkejun.cdyoucd.config.StatusBarUtils;
 
 public class SettingActivity extends AppCompatActivity {
 
-    private static final String TAG=MainActivity.class.getSimpleName();
-
-    private Button mBtn;
-    private Toolbar toolbar;
-
     @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_setting);
-//        this.toolbar.setTitle("设置");
-//        setSupportActionBar(this.toolbar);
-//        ActionBar actionBar = getSupportActionBar();
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setTitle("设置");
+        setSupportActionBar(toolbar);
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);//这2行是设置返回按钮的
+            getSupportActionBar().setDisplayShowHomeEnabled(true);
+        }
         //调用设置状态栏颜色
         StatusBarUtils.setColor(this, getResources().getColor(R.color.colorPrimaryDark));
-        Log.i(TAG,"onCreate");
-        mBtn=(Button)findViewById(R.id.activitysettingLinearLayout1);
-        mBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent=new Intent(SettingActivity.this,CoupleActivity.class);
-                startActivity(intent);
-            }
-        });
 
     }
 }

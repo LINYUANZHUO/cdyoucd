@@ -1,9 +1,22 @@
 <resources>
 
+    <style name="App" parent="AppTheme.Base">
+    </style>
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
     <!-- Base application theme. -->
     <style name="Theme" parent="Theme.AppCompat.Light.NoActionBar">
     </style>
-    <!-- 去电Activity的ActionBar样式 -->
+<!--    设置没有标题，无actionBar主题-->
+    <style name="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- 去掉Activity的ActionBar样式 -->
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>

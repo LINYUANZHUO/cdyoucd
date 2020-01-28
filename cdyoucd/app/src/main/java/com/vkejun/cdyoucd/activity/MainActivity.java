@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationB
         initBottomNavBar(paramInt);
         initTab();
         this.bottomNavigationBar.setTabSelectedListener(this);
-        StatusbarColorUtils.setStatusBarDarkIcon(this,false);  //参数 false 白色 true 黑色
+        //StatusbarColorUtils.setStatusBarDarkIcon(this,false);  //参数 false 白色 true 黑色  无效。。。
         //调用设置状态栏颜色
         StatusBarUtils.setColor(this, getResources().getColor(R.color.colorPrimaryDark));
         //图片置顶

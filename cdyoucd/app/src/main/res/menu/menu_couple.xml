@@ -7,5 +7,22 @@
         android:title="加好友"
         app:showAsAction="ifRoom|withText" />
 
+    <item
+        android:icon="@drawable/ic_launcher_background"
+        android:id="@+id/menu_about"
+        android:title="加好友"
+        app:showAsAction="ifRoom|withText" />
+
+    <item
+        android:icon="@drawable/ic_launcher_background"
+        android:id="@+id/menu_settings"
+        android:title="加好友"
+        app:showAsAction="ifRoom|withText" />
+    <item
+        android:icon="@drawable/ic_launcher_background"
+        android:id="@+id/menu_quit"
+        android:title="加好友"
+        app:showAsAction="ifRoom|withText" />
+
 
 </menu>
