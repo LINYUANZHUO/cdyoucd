@@ -3,10 +3,16 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
-
+    <!--底部导航栏点击背景色-->
     <color name="di">#FFFFFFFF</color>
     <color name="ww">#FFFFD180</color>
     <color name="xx">#FFFFAB40</color>
+<!--按钮线框色-->
+    <color name="button_bg">#FFFFAB40</color>
+
+    <color name="personalCenterHeadStart">#FFF6B7</color>
+    <color name="personalCenterHeadEnd">#F6416C</color>
+
 
     <color name="sakura">#fffb7299</color>
     <color name="sakura_text">#fffb7299</color>

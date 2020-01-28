@@ -7,6 +7,7 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.widget.Toolbar;
 
 import com.vkejun.cdyoucd.R;
+import com.vkejun.cdyoucd.config.ArcBg;
 import com.vkejun.cdyoucd.fragment.SettingFragment;
 
 public class SettingActivity extends BaseActivity {
@@ -19,6 +20,7 @@ public class SettingActivity extends BaseActivity {
         if (actionBar != null)
             actionBar.setDisplayHomeAsUpEnabled(true);
         //getFragmentManager().beginTransaction().add(R.id.setting_Content, new SettingFragment()).commit();
+        new ArcBg.ShaderView(this);
     }
 
     private void initView() { this.toolbar = (Toolbar)findViewById(R.id.toolbar); }

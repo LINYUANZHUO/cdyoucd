@@ -1,7 +1,14 @@
 package com.vkejun.cdyoucd.activity;
 
+import android.annotation.TargetApi;
+import android.app.Activity;
+import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.KeyEvent;
+import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
@@ -10,6 +17,7 @@ import com.ashokvarma.bottomnavigation.BottomNavigationBar;
 import com.ashokvarma.bottomnavigation.BottomNavigationItem;
 import com.vkejun.cdyoucd.R;
 import com.vkejun.cdyoucd.config.MToast;
+import com.vkejun.cdyoucd.config.StatusBarUtils;
 import com.vkejun.cdyoucd.fragment.F1;
 import com.vkejun.cdyoucd.fragment.F2;
 import com.vkejun.cdyoucd.fragment.F3;
@@ -29,6 +37,32 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationB
         initBottomNavBar(paramInt);
         initTab();
         this.bottomNavigationBar.setTabSelectedListener(this);
+        //调用设置状态栏颜色
+        StatusBarUtils.setColor(this, getResources().getColor(R.color.colorPrimaryDark));
+        //图片置顶
+        //StatusBarUtils.setTransparent(this);
+    }
+
+    /**
+     * 状态栏透明
+     * @param activity
+     */
+    @TargetApi(19)
+    public static void transparencyBar(Activity activity) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            Window window = activity.getWindow();
+            window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS
+            );
+            window.getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+                    | View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
+            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+            window.setStatusBarColor(Color.TRANSPARENT);
+            window.setNavigationBarColor(Color.TRANSPARENT);
+        } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+            Window window = activity.getWindow();
+            window.setFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS,
+                    WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+        }
     }
 
     private void initBottomNavBar(int paramInt){
@@ -95,6 +129,8 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationB
         }
         return onKeyUp(paramInt, paramKeyEvent);
     }
+
+
 
     @Override
     public void onTabUnselected(int position) {}
