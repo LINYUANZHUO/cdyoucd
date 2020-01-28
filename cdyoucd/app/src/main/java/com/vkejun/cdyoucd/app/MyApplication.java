@@ -9,6 +9,7 @@ import cn.bmob.v3.Bmob;
 public class MyApplication extends Application {
     public void onCreate() {
         super.onCreate();
+        //默认初始化
         Bmob.initialize(this, new String(Base64.decode((new String(Base64.decode("WW1WaE5UVXlZamc0Tmpaak9ERXlNVE5tWXpRMU1USTJZalJtWTJReFptWUsK".getBytes(), 0))).getBytes(), 0)));
         //Bugly.init(getApplicationContext(), "3222489be8", false);
     }

@@ -11,7 +11,33 @@
         android:background="?attr/colorPrimary"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme" />
-    <FrameLayout android:id="@+id/setting_Content"
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:id="@+id/activitysettingLinearLayout1"
+        android:background="?android:selectableItemBackground"
+        android:clickable="true"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent" />
+        android:layout_height="50.0dip">
+
+        <ImageView
+            android:layout_width="25.0dip"
+            android:layout_height="25.0dip"
+            android:layout_marginLeft="15.0dip"
+            app:srcCompat="@drawable/shezhi" />
+        <TextView
+            android:textSize="18.0sp"
+            android:textColor="#ff000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:text="反馈"
+            android:layout_weight="1.0" />
+
+        <ImageView
+            android:layout_width="25.0dip"
+            android:layout_height="25.0dip"
+            android:layout_marginRight="15.0dip"
+            app:srcCompat="@android:drawable/ic_media_play" />
+    </LinearLayout>
 </LinearLayout>

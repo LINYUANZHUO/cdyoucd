@@ -18,6 +18,7 @@ import com.ashokvarma.bottomnavigation.BottomNavigationItem;
 import com.vkejun.cdyoucd.R;
 import com.vkejun.cdyoucd.config.MToast;
 import com.vkejun.cdyoucd.config.StatusBarUtils;
+import com.vkejun.cdyoucd.config.StatusbarColorUtils;
 import com.vkejun.cdyoucd.fragment.F1;
 import com.vkejun.cdyoucd.fragment.F2;
 import com.vkejun.cdyoucd.fragment.F3;
@@ -37,12 +38,23 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationB
         initBottomNavBar(paramInt);
         initTab();
         this.bottomNavigationBar.setTabSelectedListener(this);
+        StatusbarColorUtils.setStatusBarDarkIcon(this,false);  //参数 false 白色 true 黑色
         //调用设置状态栏颜色
         StatusBarUtils.setColor(this, getResources().getColor(R.color.colorPrimaryDark));
         //图片置顶
         //StatusBarUtils.setTransparent(this);
     }
-
+    //白底黑字--安卓6.0及以上进行适配
+//    private static void darkModeForM(Window window, boolean dark) {
+//
+//        int systemUiVisibility = window.getDecorView().getSystemUiVisibility();
+//        if (dark) {
+//            systemUiVisibility |= View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR;
+//        } else {
+//            systemUiVisibility &= ~View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR;
+//        }
+//        window.getDecorView().setSystemUiVisibility(systemUiVisibility);
+//    }
     /**
      * 状态栏透明
      * @param activity
@@ -64,7 +76,6 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationB
                     WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         }
     }
-
     private void initBottomNavBar(int paramInt){
         /*1.首先进行fvb*/
         bottomNavigationBar = (BottomNavigationBar) findViewById(R.id.bottom_nav_bar);
@@ -89,7 +100,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationB
         transaction.replace(R.id.frame_content,f1q);
         transaction.commit();
     }
-
+//判断底部点击
     @Override
     public void onTabSelected(int position) {
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
